@@ -29,18 +29,17 @@
       <div class="form signup">
         <header>Add Book</header>
         @if(Session::has('success'))
-        <div class="alert alert-success" role="alert">
+        <div class="success-txt" role="alert">
           {{ Session::get('success') }}
         </div>
         @endif
         <form action="{{ url('save-book') }}" method="post">
           @csrf
-          <div class="error-txt">Please fill all the required fields!</div>
           <div class="field input">
             <label class="form-label">BookTitle</label>
             <input type="text" class='form-control' name='booktitle' placeholder="Enter Book Title" value="{{ old('booktitle') }}">
             @error('booktitle')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -49,7 +48,7 @@
             <label class="form-label">Publisher</label>
             <input type="text" class='form-control' name='publisher' placeholder="Enter Publisher" value="{{ old('publisher') }}">
             @error('publisher')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -58,7 +57,7 @@
             <label class="form-label">Author</label>
             <input type="text" class='form-control' name='author' placeholder="Enter Author" value="{{ old('author') }}">
             @error('author')
-            <div class="alert alert-danger" role="alert">
+            <div class=text-dangerr" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -67,7 +66,7 @@
             <label class="form-label">Year Published</label>
             <input type="text" class='form-control' name='yearpublished' placeholder="Enter Year Published" value="{{ old('yearpublished') }}">
             @error('yearpublished')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror

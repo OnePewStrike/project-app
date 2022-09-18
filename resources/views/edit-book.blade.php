@@ -35,13 +35,12 @@
         @endif
         <form action="{{ url('update-book') }}" method="post">
           @csrf
-          <div class="error-txt">Please fill all the required fields!</div>
           <input type="hidden" name="id" value=" {{ $data->id }}">
           <div class="field input">
             <label class="form-label">BookTitle</label>
             <input type="text" class='form-control' name='booktitle' placeholder="{{ "Enter Book Title" }}" value="{{ $data->BookTitle}}">
             @error('booktitle')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -50,7 +49,7 @@
             <label class="form-label">Publisher</label>
             <input type="text" class='form-control' name='publisher' placeholder="Enter Publisher" value="{{ $data->Publisher }}">
             @error('publisher')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -59,7 +58,7 @@
             <label class="form-label">Author</label>
             <input type="text" class='form-control' name='author' placeholder="Enter Author" value="{{ $data->Author }}">
             @error('author')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -68,7 +67,7 @@
             <label class="form-label">Year Published</label>
             <input type="text" class='form-control' name='yearpublished' placeholder="Enter Year Published" value="{{ $data->YearPublished }}">
             @error('yearpublished')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
@@ -77,7 +76,7 @@
             <label class="form-label">Volume</label>
             <input type="text" class='form-control' name='volume' placeholder="Enter Volume" value="{{ $data->Volume }}">
             @error('volume')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
