@@ -57,7 +57,7 @@
             <label class="form-label">Author</label>
             <input type="text" class='form-control' name='author' placeholder="Enter Author" value="{{ old('author') }}">
             @error('author')
-            <div class=text-dangerr" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror

@@ -7,16 +7,17 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
-class CustomAuthController extends Controller
+class AuthController extends Controller
 {
     public function login()
     {
-        return view("auth.login");
+        return view("login");
     }
     public function registration()
     {
-        return view("auth.registration");
+        return view("registration");
     }
+
     public function registerUser(Request $request)
     {
         $request->validate([

@@ -24,12 +24,12 @@
   </section>
 
   {{-- Edit Book Form  --}}
-  <div class="hero">
+  <section class="hero">
     <div class="wrapper">
       <div class="form signup">
         <header>Edit Book</header>
         @if(Session::has('success'))
-        <div class="alert alert-success" role="alert">
+        <div class="success-txt" role="alert">
           {{ Session::get('success') }}
         </div>
         @endif
@@ -89,6 +89,6 @@
         </form>
       </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>

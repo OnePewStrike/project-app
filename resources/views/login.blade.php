@@ -15,7 +15,8 @@
       </a>
   </section>
 
-  <div class="hero">
+  {{-- Login Section  --}}
+  <section class="hero">
     <div class="wrapper">
       <div class="form signup" style="margin-top: 20px">
         <header>Login</header>
@@ -57,7 +58,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </section>
 
 
   <!-- JavaScript Bundle with Popper -->

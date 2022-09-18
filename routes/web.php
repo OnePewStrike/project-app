@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BooksController;
 
 /*
@@ -20,11 +20,11 @@ Route::get('/', function () {
 });
 
 // Login-Register Controller
-Route::get('/login', [CustomAuthController::class, 'login']);
-Route::get('/registration', [CustomAuthController::class, 'registration']);
-Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/registration', [AuthController::class, 'registration']);
+Route::post('/register-user', [AuthController::class, 'registerUser'])->name('register-user');
 
-Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+Route::post('/login-user', [AuthController::class, 'loginUser'])->name('login-user');
 
 // Book CRUD Controller
 Route::get('/home', [BooksController::class, 'home']);
