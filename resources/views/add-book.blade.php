@@ -19,11 +19,11 @@
         <li><a href="#">Maintenance</a></li>
       </ul>
     </nav>
-    <a href="#" class="user">username</a>
+    <a href="logout" class="logout"> logout </a>
   </section>
 
   {{-- Add Book Form  --}}
-  <section class="hero">
+  <section class="hero-small">
     <div class="wrapper">
       <div class="form signup">
         <header>Add Book</header>

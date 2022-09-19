@@ -15,7 +15,7 @@
       </a>
       <nav>
         <ul class ='nav-links'>
-          <li><a href="{{ url('home')}}">Home</a></li>
+          <li><a href="{{ url('home')}}">Homepage</a></li>
           <li><a href="{{ url('maintenance') }}">Maintenance</a></li>
         </ul>
       </nav>
@@ -23,7 +23,7 @@
   </section>
 
   {{-- Edit Book Form  --}}
-  <section class="hero">
+  <section class="hero-small">
     <div class="wrapper">
       <div class="form signup">
         <header>Edit Book</header>

@@ -20,16 +20,15 @@ Route::get('/', function () {
 });
 
 // Login-Register Controller
-Route::get('/login', [AuthController::class, 'login'])->middleware('alreadyLoggedIn');
-Route::get('/registration', [AuthController::class, 'registration'])->middleware('alreadyLoggedIn');
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/registration', [AuthController::class, 'registration']);
 Route::post('/register-user', [AuthController::class, 'registerUser'])->name('register-user');
 
 Route::post('/login-user', [AuthController::class, 'loginUser'])->name('login-user');
-Route::get('/home', [AuthController::class, 'home'])->middleware('isLoggedIn');
+Route::get('/home', [AuthController::class, 'home']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
-// Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('isLoggedIn');
-
+Route::get('/dashboard', [AuthController::class, 'dashboard']);
 
 // Book CRUD Controller
 Route::get('/home', [BooksController::class, 'home']);

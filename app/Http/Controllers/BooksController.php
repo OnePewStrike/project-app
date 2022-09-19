@@ -16,7 +16,6 @@ class BooksController extends Controller
     public function index()
     {
         $data = Book::get();
-        // return $data;
         return view('maintenance', compact('data'));
     }
 
@@ -91,8 +90,15 @@ class BooksController extends Controller
         return redirect()->back()->with('success', 'Success: Book Deleted Succesfully');
     }
 
-    public function viewBook()
+    // public function editBook($id)
+    // {
+    //     $data = Book::where('id', '=', $id)->first();
+    //     return view('edit-book', compact('data'));
+    // }
+
+    public function viewBook($id)
     {
-        return view('/book');
+        $data = Book::where('id', '=', $id)->first();
+        return view('view-book', compact('data'));
     }
 }

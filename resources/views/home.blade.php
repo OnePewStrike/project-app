@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>Home</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
             <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
           </ul>
         </nav>
-        <a href="#" class="user"> username </a>
+        <a href="logout" class="logout"> logout </a>
     </section>
 
     {{-- {{ $data->username }} --}}
@@ -56,12 +56,22 @@
                 <td>{{ $book->Author }}</td>
                 <td>{{ $book->YearPublished }}</td>
                 <td>{{ $book->Volume }}</td>
-                <td><a href="{{ url('view-book/'.$book->id) }}" class="btn btn-primary">View</a> </td>
+                <td>
+                  <a href="{{ url('view-book/'.$book->id) }}" class="btn btn-primary">View</a> 
+                </td>
               </tr>
           @endforeach
         </tbody>
       </table>
       </section>
+      
+  <section class="footer">
+    <div class="line"></div>
+    <div class="footer-details">
+      <h5>@Godwin Duliente</h5>
+      <h5>CS31 Architecture And Organization</h5>
+    </div>
+  </section>
 
 </body>
 </html>

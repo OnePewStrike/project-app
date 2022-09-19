@@ -19,7 +19,7 @@
           <li><a href="{{ url('maintenance') }}">Maintenance</a></li>
         </ul>
       </nav>
-      <a href="#" class="user">username</a>
+        <a href="logout" class="logout"> logout </a>
   </section>
 
   {{-- Book Lists  --}}
