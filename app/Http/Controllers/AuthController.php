@@ -34,7 +34,7 @@ class AuthController extends Controller
         $user->name = $name;
         $user->username = $username;
         $user->password = $password;
-        $res = $user->save;
+        $res = $user->save();
 
         if ($res) {
             return back()->with('success', 'Success: You have registered successfully');

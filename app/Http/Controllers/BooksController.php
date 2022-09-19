@@ -49,7 +49,7 @@ class BooksController extends Controller
         $book->Volume = $volume;
         $book->save();
 
-        return redirect()->back()->with('success', 'Book Added Succesfully');
+        return redirect()->back()->with('success', 'Success: Book Added Succesfully');
     }
 
     public function editBook($id)
@@ -82,12 +82,12 @@ class BooksController extends Controller
             'yearpublished' => $yearpublished,
             'volume' => $volume
         ]);
-        return redirect()->back()->with('success', 'Book Updated Succesfully');
+        return redirect()->back()->with('success', 'Success: Book Updated Succesfully');
     }
 
     public function deleteBook($id)
     {
         Book::where('id', '=', $id)->delete();
-        return redirect()->back()->with('success', 'Book Deleted Succesfully');
+        return redirect()->back()->with('success', 'Success: Book Deleted Succesfully');
     }
 }

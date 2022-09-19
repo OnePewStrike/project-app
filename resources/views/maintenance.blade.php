@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Book Lists</title>
+  <title>Book Maintenance</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -26,10 +26,10 @@
   <section class="table-container">
     <div class="table-header">
       <h1>Book List</h1>
-      <a href="{{ url('add-book') }}" class="btn-large btn-primary">Add Book</a>
+      <a href="{{ url('add-book') }}" class="btn-large btn-primary">Add New Book</a>
     </div>
     @if(Session::has('success'))
-    <div class="alert alert-success" role="alert">
+    <div class="main-success-txt">
       {{ Session::get('success') }}
     </div>
     @endif

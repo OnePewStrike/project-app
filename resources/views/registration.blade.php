@@ -23,7 +23,7 @@
         <hr>
         <form action="{{route('register-user')}}" method="post">
           @if(Session::has('success'))
-          <div class="alert alert-success">
+          <div class="success-txt">
             {{ Session::get('success') }}
           </div>
           @endif

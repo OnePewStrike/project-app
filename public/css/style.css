@@ -268,7 +268,7 @@ button {
   padding: 12px 15px;
 }
 
-/* Maintenance Book Table List  */
+/* Book Maintenance List  */
 .table-container h1 {
   padding: 20px 0 0 10%;
   font-size: 2em;
@@ -315,6 +315,26 @@ button {
   float: right;
 }
 
+.main-success-txt {
+  position: relative;
+  margin: 10px auto;
+  width: 1100px;
+  height: 50px;
+  color: #148b2e;
+  background: #9bebac;
+  padding: 15px 10px 10px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #b0e9c5;
+}
+
+/* .vertical-line {
+  position: relative;
+  margin: 20px auto;
+  width: 1100px;
+  height: 2px;
+  background-color: #333;
+} */
 
 /* Add Book Form  */
 .wrapper-form {
