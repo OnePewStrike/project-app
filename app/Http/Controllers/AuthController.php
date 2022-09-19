@@ -46,7 +46,6 @@ class AuthController extends Controller
     public function loginUser(Request $request)
     {
         $request->validate([
-            'name' => 'required',
             'username' => 'required',
             'password' => 'required',
         ]);
@@ -55,7 +54,7 @@ class AuthController extends Controller
         if ($user) {
             if (Hash::check($request->password, $user->password)) {
                 $request->session()->put('loginId', $user->id);
-                return redirect('dashboard');
+                return redirect('home');
             } else {
                 return back()->with('fail', 'This password is not matched.');
             }
@@ -63,8 +62,31 @@ class AuthController extends Controller
             return back()->with('fail', 'This username is not registered.');
         }
     }
+
     public function dashboard()
     {
-        return "Welcome to your dashboard";
+        $data = array();
+        if (Session::has('loginId')) {
+            $data = User::where('id', '=', Session::get('loginId'))->first();
+        }
+        return view("dashboard", compact('data'));
+    }
+
+    public function home()
+    {
+        $data = array();
+        if (Session::has('loginId')) {
+            $data = User::where('id', '=', Session::get('loginId'))->first();
+        }
+        return view("home", compact('data'));
+    }
+
+
+    public function logout()
+    {
+        if (Session::has('loginId')) {
+            Session::pull('loginId');
+            return redirect('login');
+        }
     }
 }
