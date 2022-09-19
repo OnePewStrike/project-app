@@ -56,7 +56,7 @@
                 <td>{{ $book->Author }}</td>
                 <td>{{ $book->YearPublished }}</td>
                 <td>{{ $book->Volume }}</td>
-                <td><a href="#" class="btn btn-primary">View</a> </td>
+                <td><a href="{{ url('view-book/'.$book->id) }}" class="btn btn-primary">View</a> </td>
               </tr>
           @endforeach
         </tbody>

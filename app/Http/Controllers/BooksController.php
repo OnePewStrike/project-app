@@ -90,4 +90,9 @@ class BooksController extends Controller
         Book::where('id', '=', $id)->delete();
         return redirect()->back()->with('success', 'Success: Book Deleted Succesfully');
     }
+
+    public function viewBook()
+    {
+        return view('/book');
+    }
 }

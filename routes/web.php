@@ -45,4 +45,4 @@ Route::post('/update-book', [BooksController::class, 'updateBook']);
 
 Route::get('/delete-book/{id}', [BooksController::class, 'deleteBook']);
 
-Route::get('/view-book/{id}', [BooksController::class, 'editBook']);
+Route::get('/view-book/{id}', [BooksController::class, 'viewBook']);
