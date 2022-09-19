@@ -19,11 +19,12 @@
             <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
           </ul>
         </nav>
-        <a href="#" class="user"> {{ $data->username }} </a>
+        <a href="#" class="user"> username </a>
     </section>
 
+    {{-- {{ $data->username }} --}}
     {{-- Project Submission: Web Development and Implementation using Laravel Framework --}}
-
+  
     <!-- Content Page  -->
     <section class="container">
       <header> Welcome to Godwin's Library System </header>
@@ -41,6 +42,7 @@
           <th>Author</th>
           <th>Year Published</th>
           <th>Volume</th>
+          <th>Action</th>
           </tr></thead>
         <tbody>
           @php
@@ -54,6 +56,8 @@
                 <td>{{ $book->Author }}</td>
                 <td>{{ $book->YearPublished }}</td>
                 <td>{{ $book->Volume }}</td>
+                <td><a href="#" class="btn btn-primary">View</a> </td>
+              </tr>
           @endforeach
         </tbody>
       </table>
