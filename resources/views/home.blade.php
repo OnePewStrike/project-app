@@ -19,7 +19,7 @@
             <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
           </ul>
         </nav>
-        <a href="#" class="user">username</a>
+        <a href="#" class="user"> {{ $data->username }} </a>
     </section>
 
     {{-- Project Submission: Web Development and Implementation using Laravel Framework --}}
