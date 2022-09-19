@@ -29,7 +29,7 @@
           </div>
           @endif
           @if(Session::has('fail'))
-          <div class="success-txt">
+          <div class="error-txt">
             {{ Session::get('fail') }}
           </div>
           @endif

@@ -25,6 +25,7 @@ Route::get('/registration', [AuthController::class, 'registration']);
 Route::post('/register-user', [AuthController::class, 'registerUser'])->name('register-user');
 
 Route::post('/login-user', [AuthController::class, 'loginUser'])->name('login-user');
+Route::get('/dashboard', [AuthController::class, 'dashboard']);
 
 // Book CRUD Controller
 Route::get('/home', [BooksController::class, 'home']);

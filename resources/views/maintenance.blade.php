@@ -62,7 +62,7 @@
         @endforeach
       </tbody>
     </table>
-  </div>
+  </section>
 
 
   <!-- JavaScript Bundle with Popper -->
