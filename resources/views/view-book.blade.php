@@ -15,11 +15,11 @@
       </a>
       <nav>
         <ul class ='nav-links'>
-          <li><a href="{{ url('home')}}">Home</a></li>
+          <li><a href="{{ url('home')}}">Homepage</a></li>
           <li><a href="{{ url('maintenance') }}">Maintenance</a></li>
         </ul>
       </nav>
-        <a href="logout" class="logout"> logout </a>
+      <a href="login" class="logout"> logout </a>
   </section>
 
   
@@ -49,7 +49,7 @@
           <p class="output"> {{ $data->Volume }} </p>
         </div>
         <div class="back-action">
-          <a href="{{ url('maintenance') }}" class="btn btn-secondary back-action">Back</a>
+          <a href="{{ url('home') }}" class="btn btn-secondary back-action">Back</a>
         </div>
     </div>
   </section>

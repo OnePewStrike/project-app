@@ -15,15 +15,15 @@
     </a>
     <nav>
       <ul class='nav-links'>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="#">Maintenance</a></li>
+          <li><a href="{{ url('home')}}">Homepage</a></li>
+          <li><a href="{{ url('maintenance') }}">Maintenance</a></li>
       </ul>
     </nav>
-    <a href="logout" class="logout"> logout </a>
+    <a href="login" class="logout"> logout </a>
   </section>
 
   {{-- Add Book Form  --}}
-  <section class="hero-small">
+  <section class="hero">
     <div class="wrapper">
       <div class="form signup">
         <header>Add Book</header>
