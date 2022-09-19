@@ -36,48 +36,48 @@
           @csrf
           <div class="field input">
             <label class="form-label">BookTitle</label>
-            <input type="text" class='form-control' name='booktitle' placeholder="Enter Book Title" value="{{ old('booktitle') }}">
             @error('booktitle')
             <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
+            <input type="text" class='form-control' name='booktitle' placeholder="Enter Book Title" value="{{ old('booktitle') }}">
           </div>
           <div class="field input">
             <label class="form-label">Publisher</label>
-            <input type="text" class='form-control' name='publisher' placeholder="Enter Publisher" value="{{ old('publisher') }}">
             @error('publisher')
             <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
+            <input type="text" class='form-control' name='publisher' placeholder="Enter Publisher" value="{{ old('publisher') }}">
           </div>
           <div class="field input">
             <label class="form-label">Author</label>
-            <input type="text" class='form-control' name='author' placeholder="Enter Author" value="{{ old('author') }}">
             @error('author')
             <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
+            <input type="text" class='form-control' name='author' placeholder="Enter Author" value="{{ old('author') }}">
           </div>
           <div class="field input">
             <label class="form-label">Year Published</label>
-            <input type="text" class='form-control' name='yearpublished' placeholder="Enter Year Published" value="{{ old('yearpublished') }}">
             @error('yearpublished')
             <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
+            <input type="text" class='form-control' name='yearpublished' placeholder="Enter Year Published" value="{{ old('yearpublished') }}">
           </div>
           <div class="field input">
             <label class="form-label">Volume</label>
-            <input type="text" class='form-control' name='volume' placeholder="Enter Volume" value="{{ old('volume') }}">
             @error('volume')
-            <div class="alert alert-danger" role="alert">
+            <div class="text-danger" role="alert">
               {{ $message }}
             </div>
             @enderror
+            <input type="text" class='form-control' name='volume' placeholder="Enter Volume" value="{{ old('volume') }}">
           </div>
           <br>
           <div class="actions">

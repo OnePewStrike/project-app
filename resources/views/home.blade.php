@@ -10,9 +10,9 @@
 <body>
     <!-- Header -->
     <section class="header">
-        <a href="#">
-          <h1 class="logo"> LIBRARY SYSTEM </h1>
-        </a>
+      <a href="{{  url('home') }}">
+        <h1 class="logo"> LIBRARY SYSTEM </h1>
+      </a>
         <nav>
           <ul class ='nav-links'>
             <li><a href="{{ url('home')}}">Homepage</a></li>

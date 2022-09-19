@@ -17,7 +17,7 @@
   </section>
 
   {{-- Login Section  --}}
-  <section class="hero">
+  <section class="hero-small">
     <div class="wrapper">
       <div class="form signup" style="margin-top: 20px">
         <header>Login</header>
@@ -36,21 +36,21 @@
           @csrf
           <div class="field input">
             <label for="username">Username</label>
-            <input type="text" class="form-control" placeholder="Enter your Username" name="username" value="{{ old('username') }}">
             @error('username')
             <span class="text-danger"> 
               {{ $message }} 
             </span>
             @enderror
+            <input type="text" class="form-control" placeholder="Enter your Username" name="username" value="{{ old('username') }}">
           </div>
           <div class="field input">
             <label for="password">Password</label>
-            <input type="password" class="form-control" placeholder="Enter your password" name="password" value="{{ old('password') }}">
             @error('password')
             <span class="text-danger"> 
               {{ $message }} 
             </span>
             @enderror
+            <input type="password" class="form-control" placeholder="Enter your password" name="password" value="{{ old('password') }}">
           </div>
           <div class="link">Don't have an account? <a href="{{ url('registration') }}"> Register now </a></div>
           <div class="actions">
@@ -60,7 +60,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
