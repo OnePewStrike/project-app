@@ -21,6 +21,7 @@
       <a href="#" class="user">username</a>
   </section>
 
+  
   {{-- Book View --}}
   <section class="hero">
     
