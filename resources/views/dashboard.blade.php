@@ -9,8 +9,8 @@
 </head>
 <body>
     <!-- Header Section -->
-    <section class="header">lara
-      <a href="{{  url('#') }}">
+    <section class="header">
+      <a href="{{  url('dashboard') }}">
         <h1 class="logo"> LIBRARY SYSTEM </h1>
       </a>
       <a href="#" class="user"> username </a>
