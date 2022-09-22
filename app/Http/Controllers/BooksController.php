@@ -7,10 +7,10 @@ use App\Models\Book;
 
 class BooksController extends Controller
 {
-    public function home()
+    public function dashboard()
     {
         $data = Book::get();
-        return view('home', compact('data'));
+        return view('dashboard', compact('data'));
     }
 
     public function index()
@@ -89,12 +89,6 @@ class BooksController extends Controller
         Book::where('id', '=', $id)->delete();
         return redirect()->back()->with('success', 'Success: Book Deleted Succesfully');
     }
-
-    // public function editBook($id)
-    // {
-    //     $data = Book::where('id', '=', $id)->first();
-    //     return view('edit-book', compact('data'));
-    // }
 
     public function viewBook($id)
     {

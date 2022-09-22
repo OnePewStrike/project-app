@@ -25,13 +25,12 @@ Route::get('/registration', [AuthController::class, 'registration']);
 Route::post('/register-user', [AuthController::class, 'registerUser'])->name('register-user');
 
 Route::post('/login-user', [AuthController::class, 'loginUser'])->name('login-user');
-Route::get('/home', [AuthController::class, 'home']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::get('/dashboard', [AuthController::class, 'dashboard']);
 
 // Book CRUD Controller
-Route::get('/home', [BooksController::class, 'home']);
+Route::get('/dashboard', [BooksController::class, 'dashboard']);
 Route::get('/add', [BooksController::class, 'add']);
 Route::get('/update', [BooksController::class, 'update']);
 

@@ -8,18 +8,17 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Section -->
   <section class="header">
-      <a href="#">
-        <h1 class="logo"> LIBRARY SYSTEM </h1>
-      </a>
+    <a href="{{  url('#') }}">
+      <h1 class="logo"> LIBRARY SYSTEM </h1>
+    </a>
   </section>
 
-  <section class="hero-small">
+  <section class="hero">
     <div class="wrapper">
       <div class="form signup" style="margin-top: 20px">
         <header>Registration</header>
-        <hr>
         <form action="{{route('register-user')}}" method="post">
           @if(Session::has('success'))
           <div class="success-txt">
@@ -61,12 +60,21 @@
           </div>
           <div class="link">Already have an account? <a href="{{ url('login') }}"> Login now </a></div>
           <div class="actions">
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
     </div>
   </section>
+
+  {{-- Footer Section  --}}
+  <section class="footer">
+    <div class="footer-details">
+      <h5>@Library Management System</h5>
+      <h5>CS31 Architecture And Organization</h5>
+    </div>
+  </section>
+
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

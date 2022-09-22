@@ -1,30 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins",sans-serif;
 }
 
 /* Navbar */
-
-li,
-a,
+li, 
 button {
-  font-weight: 600;
-  font-size: 16px;
-  color: #edf0f1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #26272c;
+  cursor: pointer;
   text-decoration: none;
 }
 
 .btn {
-  cursor: pointer;
-  padding: 7px 10px;
-  border-radius: 5px;
+  padding: 6px 15px;
   border: none;
-  margin-right: 10px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .btn-primary {
+  color: #fff;
   background-color: #0088a9;
   transition: all 0.3s ease 0s;
 }
@@ -34,6 +34,7 @@ button {
 }
 
 .btn-danger {
+  color: #fff;
   background-color: #d9534f;
   transition: all 0.3s ease 0s;
 }
@@ -52,22 +53,62 @@ button {
   background-color: #ccc;
 }
 
+/* Header Section  */
 .header {
-  min-height: 10vh;
-  background: #24252A;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 120px;
+  padding: 40px 180px 30px;
+  border-bottom: 1px solid #26272c;
+  color"
+}
+
+hr {
+  position: relative;
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .logo {
   cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;  
+  color: #26272c;
+}
+
+.user {
+  cursor: pointer;
+  text-decoration: none;
+  color: #26272c;
   transition: all 0.3s ease 0s;
 }
 
-.logo:hover {
-  color: #0088a9;
+.user:hover {
+  text-decoration: underline;
+}
+
+/* Sub-Header Section  */
+.sub-header {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-header .nav-links a {
+  text-decoration: none;
+}
+
+.left-content {
+  padding-left: 20px;
+}
+
+.left-content a {
+  text-decoration: none;
 }
 
 .nav-links {
@@ -76,19 +117,162 @@ button {
 
 .nav-links li {
   display: inline-block;
-  padding: 0px 20px;
+  margin-left: 60px;
+  font-size: 21px;
 }
 
-.nav-links li a {
+.nav-links a {
+  color: #26272c;
   transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover {
-  color: #0088a9;
+.nav-links a:hover {
+  color: #9898a3;
+}
+
+.right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.right-content button {
+  margin-left: 10px;
+}
+
+.logout {
+  color: #d9534f;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 3px;
+  transition: all 0.3s ease 0s;
+}
+
+.sub-header .right-content a {
+  text-decoration: none;
 }
 
 .logout:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.sub-header .right-content img {
+  height: 40px;
+  weight: 40px;
+}
+
+/* Dashboard Section  */
+.container {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container header {
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.container p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.container .sub-header {
+  padding-top: 10px;
+}
+
+.vertical-line {
+  position: relative;
+  margin: 20px auto;
+  width: 1100px;
+  height: 2px;
+  background-color: #333;
+}
+
+.container h1 {
+  padding: 40px;
+  font-size: 30px;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-col {
+  margin-left: 30px;
+  transition: 0.5s;
+  border: 5px solid #24252A;
+  border-radius: 10px;
+}
+
+.content-col img {
+  height: 180px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.content-col h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Book Collection Section */
+.table-container {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.table-content-one {
+  border-collapse: collapse;  
+  margin: 50px auto;
+  font-size: 14px;
+  width: 80%;
+  min-width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-content-one thead tr {
+  background-color: #24252A;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-content-one th, 
+.table-content-one td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Footer Section */
+.footer {
+  background: #24252A;
+  margin-top: 20px;
+  padding: 10px 40px;
+}
+
+.footer-details {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-mtn {
+  background: #24252A;
+  margin-top: 70px;
+  padding: 10px 40px;
 }
 
 /* Registration-Login Form */
@@ -96,8 +280,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #f7f7f7;
+  min-height: 78vh;
 }
 
 .hero-small {
@@ -197,6 +380,7 @@ button {
 .form .link a {
   color: #333;
   font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -210,78 +394,11 @@ button {
   padding-left: 2px;
 }
 
-/* Homepage Content */
-.container {
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #f7f7f7;
-}
 
-.container header {
-  text-align: center;
-  padding-top: 30px;
-  font-size: 40px;
-}
-
-.container p {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 25px;
-}
-
-.container .sub-header {
-  padding-top: 10px;
-}
-
-.vertical-line {
-  position: relative;
-  margin: 20px auto;
-  width: 1100px;
-  height: 2px;
-  background-color: #333;
-}
-
-.container h1 {
-  padding: 40px;
-  font-size: 30px;
-}
-
-/* Home Book Table List */
-.table-container {
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.table-content-one {
-  border-collapse: collapse;  
-  margin: 25px auto;
-  font-size: 14px;
-  width: 80%;
-  min-width: 400px;
-  align-items: center;
-  justify-content: center;
-}
-
-.table-content-one thead tr {
-  background-color: #24252A;
-  color: #fff;
-  text-align: left;
-  font-weight: bold;
-}
-
-.table-content-one th, 
-.table-content-one td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #ccc;
-}
-
-
-/* Book Maintenance List  */
+/* Book Maintenance Section  */
 .table-container h1 {
   padding: 20px 0 0 10%;
-  font-size: 2em;
+  font-size: 40px;
 }
 
 .table-content-two {
@@ -362,11 +479,7 @@ button {
   display: flex;
 }
 
-form .actions .field:first-child {
-  margin-right: 10px;
-}
-
-form .actions .field:last-child {
+.form form .actions button {
   margin-right: 10px;
 }
 
@@ -376,10 +489,9 @@ form .actions .button input {
   font-size: 14px;
 }
 
-/* View Book  */
+/* View Book Page  */
 .output-details {
   display: flex;
-  justify-content: flex-start;
   padding-top: 12px;
 }
 
@@ -396,24 +508,4 @@ form .actions .button input {
   text-align: right;
 }
 
-/* Footer */
-.footer {
-  background: #f7f7f7;
-}
-
-.line {
-  width: 1100px;
-  height: 2px;
-  background-color: #333;
-  position: relative;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.footer-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 120px;
-}
 

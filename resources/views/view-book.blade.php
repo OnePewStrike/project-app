@@ -8,23 +8,32 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <section class="header">
+    <!-- Header Section -->
+    <section class="header">
       <a href="{{  url('home') }}">
         <h1 class="logo"> LIBRARY SYSTEM </h1>
       </a>
-      <nav>
-        <ul class ='nav-links'>
-          <li><a href="{{ url('home')}}">Homepage</a></li>
-          <li><a href="{{ url('maintenance') }}">Maintenance</a></li>
-        </ul>
-      </nav>
-      <a href="login" class="logout"> logout </a>
-  </section>
+      <a href="#" class="user"> username </a>
+    </section>
 
+    {{-- Sub Header Section  --}}
+    <section class="sub-header">
+      <div class="left-content">
+        <ul class ='nav-links'>
+          <li><a href="{{ url('dashboard')}}">Dashboard</a></li>
+          <li><a href="{{ url('add-book')}}">Add Books</a></li>
+          <li><a href="#">Authors</a></li>
+          <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <a href="login" class="logout">Logout </a>
+        <img src="/images/logout-icon.png" alt="#">
+      </div>
+    </section>
   
   {{-- Book View --}}
-  <section class="hero-small">
+  <section class="hero">
     <div class="wrapper">
       <div class="form signup">
         <header>Book Details</header>
@@ -49,8 +58,16 @@
           <p class="output"> {{ $data->Volume }} </p>
         </div>
         <div class="back-action">
-          <a href="{{ url('home') }}" class="btn btn-secondary back-action">Back</a>
+          <a href="{{ url('dashboard') }}" class="btn btn-secondary back-action">Back</a>
         </div>
+    </div>
+  </section>
+
+  {{-- Footer Section  --}}
+  <section class="footer">
+    <div class="footer-details">
+      <h5>@Library Management System</h5>
+      <h5>CS31 Architecture And Organization</h5>
     </div>
   </section>
 </body>

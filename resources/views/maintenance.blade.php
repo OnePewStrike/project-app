@@ -8,25 +8,35 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <section class="header">
-      <a href="{{  url('home') }}">
+    <!-- Header Section -->
+    <section class="header">
+      <a href="{{  url('dashboard') }}">
         <h1 class="logo"> LIBRARY SYSTEM </h1>
       </a>
-      <nav>
-        <ul class ='nav-links'>
-          <li><a href="{{ url('home')}}">Homepage</a></li>
-          <li><a href="{{ url('maintenance') }}">Maintenance</a></li>
-        </ul>
-      </nav>
-        <a href="logout" class="logout"> logout </a>
-  </section>
+      <a href="#" class="user"> username </a>
+    </section>
 
-  {{-- Book Lists  --}}
+    {{-- Sub Header Section  --}}
+    <section class="sub-header">
+      <div class="left-content">
+        <ul class ='nav-links'>
+          <li><a href="{{ url('dashboard')}}">Dashboard</a></li>
+          <li><a href="{{ url('add-book')}}">Add Books</a></li>
+          <li><a href="#">Authors</a></li>
+          <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <a href="login" class="logout">Logout </a>
+        <img src="/images/logout-icon.png" alt="#">
+      </div>
+    </section>
+
+  {{-- Book Collection Section  --}}
   <section class="table-container">
     <div class="table-header">
-      <h1>Book List</h1>
-      <a href="{{ url('add-book') }}" class="btn-large btn-primary">Add New Book</a>
+      <h1>Book Maintenance</h1>
+      <a href="{{ url('add-book') }}" class="btn btn-large btn-primary">Add New Book</a>
     </div>
     @if(Session::has('success'))
     <div class="main-success-txt">
@@ -64,6 +74,13 @@
     </table>
   </section>
 
+  {{-- Footer Section  --}}
+  <section class="footer-mtn">
+    <div class="footer-details">
+      <h5>@Library Management System</h5>
+      <h5>CS31 Architecture And Organization</h5>
+    </div>
+  </section>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
