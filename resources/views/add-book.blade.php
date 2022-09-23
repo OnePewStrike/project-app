@@ -20,7 +20,7 @@
     <section class="sub-header">
       <div class="left-content">
         <ul class ='nav-links'>
-          <li><a href="{{ url('doashbard')}}">Dashboard</a></li>
+          <li><a href="{{ url('dashboard')}}">Dashboard</a></li>
           <li><a href="{{ url('add-book')}}">Add Books</a></li>
           <li><a href="#">Authors</a></li>
           <li><a href="{{  url('maintenance') }}">Maintenance</a></li>

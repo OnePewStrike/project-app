@@ -40,11 +40,11 @@
           <img src="/images/book-icon.png" alt="#">
           <h4># of books</h4>
         </div>
-        <div class="content-col">
+        <div class="content-col image-trans">
           <img src="/images/user-icon.png" alt="#">
           <h4># of authors</h4>
         </div>
-        <div class="content-col">
+        <div class="content-col image-trans">
           <img src="/images/librarian-icon.png" alt="#">
           <h4># of librarians</h4>
         </div>
