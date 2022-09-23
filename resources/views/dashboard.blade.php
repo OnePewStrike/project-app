@@ -36,7 +36,7 @@
     <section class="container">
       <header> Librarian Dashboard </header>
       <div class="row">
-        <div class="content-col">
+        <div class="content-col image-trans">
           <img src="/images/book-icon.png" alt="#">
           <h4># of books</h4>
         </div>

@@ -224,6 +224,15 @@ hr {
   font-size: 20px;
 }
 
+.image-trans {
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.image-trans:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0, 0.5);
+}
+
 /* Book Collection Section */
 .table-container {
   align-items: center;
