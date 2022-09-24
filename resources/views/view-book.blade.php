@@ -66,7 +66,7 @@
   {{-- Footer Section  --}}
   <section class="footer">
     <div class="footer-details">
-      <h5>@Library Management System</h5>
+      <h5>@Library Management System | Godwin Duliente</h5>
       <h5>CS31 Architecture And Organization</h5>
     </div>
   </section>
