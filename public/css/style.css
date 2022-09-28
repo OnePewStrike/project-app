@@ -6,6 +6,10 @@
   font-family: "Poppins",sans-serif;
 }
 
+body {
+  min-height: 100%;
+}
+
 /* Navbar */
 li, 
 button {
@@ -266,8 +270,9 @@ hr {
 /* Footer Section */
 .footer {
   background: #24252A;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px 40px;
+  bottom: 0;
 }
 
 .footer-details {
@@ -278,8 +283,8 @@ hr {
 }
 
 .footer-mtn {
+  margin-top: 400px;
   background: #24252A;
-  margin-top: 70px;
   padding: 10px 40px;
 }
 

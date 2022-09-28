@@ -22,7 +22,6 @@
         <ul class ='nav-links'>
           <li><a href="{{ url('dashboard')}}">Dashboard</a></li>
           <li><a href="{{ url('add-book')}}">Add Books</a></li>
-          <li><a href="#">Authors</a></li>
           <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
         </ul>
       </div>
@@ -75,7 +74,7 @@
   </section>
 
   {{-- Footer Section  --}}
-  <section class="footer">
+  <section class="footer-mtn">
     <div class="footer-details">
       <h5>@Library Management System | Godwin Duliente</h5>
       <h5>CS31 Architecture And Organization</h5>

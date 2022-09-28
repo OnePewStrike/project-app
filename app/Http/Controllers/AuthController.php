@@ -56,10 +56,10 @@ class AuthController extends Controller
                 $request->session()->put('loginId', $user->id);
                 return redirect('dashboard');
             } else {
-                return back()->with('fail', 'This password is not matched.');
+                return back()->with('fail', 'Error: This password is not matched.');
             }
         } else {
-            return back()->with('fail', 'This username is not registered.');
+            return back()->with('fail', 'Error: This username is not registered.');
         }
     }
 
@@ -71,16 +71,6 @@ class AuthController extends Controller
         }
         return view("dashboard", compact('data'));
     }
-
-    public function home()
-    {
-        $data = array();
-        if (Session::has('loginId')) {
-            $data = User::where('id', '=', Session::get('loginId'))->first();
-        }
-        return view("home", compact('data'));
-    }
-
 
     public function logout()
     {

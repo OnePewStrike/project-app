@@ -22,7 +22,6 @@
         <ul class ='nav-links'>
           <li><a href="{{ url('dashboard')}}">Dashboard</a></li>
           <li><a href="{{ url('add-book')}}">Add Books</a></li>
-          <li><a href="#">Authors</a></li>
           <li><a href="{{  url('maintenance') }}">Maintenance</a></li>
         </ul>
       </div>
