@@ -18,7 +18,7 @@
   <section class="hero">
     <div class="wrapper">
       <div class="form signup" style="margin-top: 20px">
-        <header>Registration</header>
+        <header>Librarian Registration</header>
         <form action="{{route('register-user')}}" method="post">
           @if(Session::has('success'))
           <div class="success-txt">

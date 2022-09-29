@@ -34,7 +34,7 @@ Route::get('/dashboard', [BooksController::class, 'dashboard']);
 Route::get('/add', [BooksController::class, 'add']);
 Route::get('/update', [BooksController::class, 'update']);
 
-Route::get('/maintenance', [BooksController::class, 'index']);
+Route::get('/maintenance', [BooksController::class, 'maintenance']);
 Route::get('/add-book', [BooksController::class, 'addBook']);
 Route::post('/save-book', [BooksController::class, 'saveBook']);
 

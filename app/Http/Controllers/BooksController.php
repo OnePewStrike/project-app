@@ -13,7 +13,7 @@ class BooksController extends Controller
         return view('dashboard', compact('data'));
     }
 
-    public function index()
+    public function maintenance()
     {
         $data = Book::get();
         return view('maintenance', compact('data'));

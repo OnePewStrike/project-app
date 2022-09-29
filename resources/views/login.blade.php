@@ -20,7 +20,7 @@
   <section class="hero">
     <div class="wrapper">
       <div class="form signup" style="margin-top: 20px">
-        <header>Login</header>
+        <header>Librarian Login</header>
         <form action="{{ route('login-user') }}" method="post">
           @if(Session::has('success'))
           <div class="success-txt">
